@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>OJS Submission Workflow Reference</title>
+
+<!--- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<!-- Custom themes -->
+<link rel="stylesheet" type="text/css" href="custom-ojs.css">
+
+</head>
+
+<body>
+<div class="container">
+
+<h1 id="title">OJS Submission Workflow Reference</h1>
+
+<div role="tabpanel">
+  <!-- Nav Tabs -->
+  <div class="centered-pills">
+    <ul class="nav nav-pills" role="tablist">
+      <li role="presentation" class="active"><a href="#registration" aria-controls="registration" role="tab" data-toggle="tab">Registration</a></li>
+      <li role="presentation"><a href="#submission" aria-controls="submission" role="tab" data-toggle="tab">Submission</a></li>
+      <li role="presentation"><a href="#review" aria-controls="review" role="tab" data-toggle="tab">Review</a></li>
+      <li role="presentation"><a href="#editing" aria-controls="editing" role="tab" data-toggle="tab">Editing</a></li>
+    </ul>
+  </div>
+
+  <!-- Tab Panes -->
+  <div class="tab-content">
+
+    <div role="tabpanel" class="tab-pane active" id="registration">
+      <h2 id="registration">Registration</h2>
+      <ul>
+        <li>Users may self register and fill out a profile</li>
+        <li>User email templates: USER REGISTER and USER VALIDATE</li>
+        <li>If the Journal Manager creates a reviewer: REVIEWER REGISTER</li>
+      </ul>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="submission">
+      <h2 id="submission">Submission</h2>
+
+      <div role="tabpanel">
+        <!-- Nav Tabs -->
+        <div class="centered-pills">
+          <ul class="nav nav-pills" role="tablist">
+            <li role="presentation" class="active"><a href="#starting" aria-controls="starting" role="tab" data-toggle="tab">Starting</a></li>
+            <li role="presentation"><a href="#uploading-the-submission" aria-controls="uploading-the-submission" role="tab" data-toggle="tab">Uploading</a></li>
+            <li role="presentation"><a href="#submission-metadata" aria-controls="submission-metadata" role="tab" data-toggle="tab">Metadata</a></li>
+            <li role="presentation"><a href="#supplementary-files" aria-controls="supplementary-files" role="tab" data-toggle="tab">Supplementary Files</a></li>
+            <li role="presentation"><a href="#confirming" aria-controls="confirming" role="tab" data-toggle="tab">Confirming</a></li>
+          </ul>
+        </div>
+
+        <div class="tab-content">
+
+          <div role="tabpanel" class="tab-pane active" id="starting">
+            <h3 id="starting">Starting</h3>
+            <ul>
+              <li>Contact for assistance is listed here (customizable)</li>
+              <li>Submission Checklist (customizable)</li>
+              <li>Copyright notice (customizable)</li>
+              <li>Privacy Statement (customizable)</li>
+              <li>Submitter can add comments to editor</li>
+            </ul>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="uploading-the-submission">
+            <h3 id="uploading-the-submission">Uploading the Submission</h3>
+            <ul>
+              <li>Upload a file (the link to &quot;ensuring a blind review&quot; sits here)</li>
+            </ul>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="submission-metadata">
+            <h3 id="submission-metadata">Submission Metadata</h3>
+            <ul>
+              <li>Authors (Including competing interests)</li>
+              <li>Title and Abstract</li>
+              <li>Indexing (options from Setup appear here)</li>
+              <li>Contributors and Supporting Agencies</li>
+              <li>Formatted references (for Citation Markup assistant)</li>
+            </ul>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="supplementary-files">
+            <h3 id="supplementary-files">Uploading Supplementary Files</h3>
+            <ul>
+              <li>Upload a file (the link to &quot;ensuring a blind review&quot; sits here)</li>
+              <li>Add metadata</li>
+            </ul>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="confirming">
+            <h3 id="confirming">Confirming the Submission</h3>
+            <ul>
+              <li>Triggers email SUBMISSION ACK, to author, bcc to editor</li>
+              <li>Adds a notification</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="review">
+
+      <h2 id="review">Review</h2>
+
+      <div role="tabpanel">
+        <!-- Nav Tabs -->
+        <div class="centered-pills">
+          <ul class="nav nav-pills" role="tablist">
+            <li role="presentation" class="active"><a href="#pre-review" aria-controls="pre-review" role="tab" data-toggle="tab">Pre-review</a></li>
+            <li role="presentation"><a href="#in-review" aria-controls="in-review" role="tab" data-toggle="tab">In Review</a></li>
+            <li role="presentation"><a href="#selecting-a-reviewer" aria-controls="selecting-a-reviewer" role="tab" data-toggle="tab">Selecting a reviewer</a></li>
+            <li role="presentation"><a href="#reviewing" aria-controls="reviewing" role="tab" data-toggle="tab">Reviewing</a></li>
+            <li role="presentation"><a href="#post-review" aria-controls="post-review" role="tab" data-toggle="tab">Post-review</a></li>
+          </ul>
+        </div>
+
+        <div class="tab-content">
+
+          <div role="tabpanel" class="tab-pane active" id="pre-review">
+            <h3 id="pre-review">Pre-review</h3>
+            <ul>
+              <li>After submission, article is in &quot;Unassigned&quot; queue, with status &quot;Awaiting Assignment&quot;</li>
+              <li>Editor may view summary to review submission metadata</li>
+              <li>Editor may add additional supplementary files</li>
+              <li>Assigned default section; Editor may assign section</li>
+              <li>Editor may add section editor (via user search interface) or another editor (via user search interface) or self</li>
+              <li>Editor may reject and archive submission - tiggers email SUBMISSION UNSUITABLE</li>
+            </ul>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="in-review">
+            <h3 id="in-review">In Review</h3>
+            <ul>
+              <li>After assignment, article is in Review</li>
+              <li>Opportunity to upload a Review version - recommended to sanitize the document to remove identifying information, including metadata (with link to instructions fo Microsoft office)</li>
+            </ul>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="selecting-a-reviewer">
+            <h3 id="selecting-a-reviewer">Selecting a reviewer</h3>
+            <ul>
+              <li>Editor may assign one or more reviewers</li>
+              <li>May choose between free-form review and a pre-designed review form</li>
+              <li>May select due-date prior to sending request</li>
+              <li>Editor may trigger email REVIEW REQUEST or REVIEW REQUEST ATTACHED or REVIEW REQUEST ONECLICK (depending on attachment workflow selection), to ask reviewer to review</li>
+            </ul>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="reviewing">
+            <h3 id="reviewing">Reviewing</h3>
+            <ul>
+              <li>Reviewer may respond with system, or with email, depending on workflow (Emails: REVIEW CONFIRM or REVIEW DECLINE)</li>
+              <li>With system, reviewer will be able to download files and supplements, and complete a CI statement.</li>
+              <li>If using review form, that is accessible here. If not using review form, reviewer may fill out comments to editor and to author &amp; editor.</li>
+              <li>Reviewer may also upload files.</li>
+              <li>Reviewer makes a recommendation and submits to editor (triggers REVIEW COMPLETE email)</li>
+            </ul>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="post-review">
+            <h3 id="post-review">Post-review</h3>
+            <ul>
+              <li>Editor may send an email to acknowledge the review (REVIEW ACK)</li>
+              <li>Editor may view content and decision of the review</li>
+              <li>Editor records decision and may notify author via email - this email may also import reviewer comments from forms (EDITOR DECISION ACCEPT, EDITOR DECISION DECLINE, EDITOR DECISION RESUBMIT, EDITOR DECISION REVISIONS)</li>
+              <li>May also edit and send author notification to reviewers</li>
+            </ul>
+            <h4 id="revisions-required">Revisions Required</h4>
+            <ul>
+              <li>For minor revisions</li>
+              <li>Author may upload revised file and Editor may make decisions without another round of review</li>
+            </ul>
+            <h4 id="resubmit-for-review">Resubmit for review</h4>
+            <ul>
+              <li>For major revisions</li>
+              <li>Author may upload revised file and Editor submits file for an additional round of review</li>
+              <li>If the same reviewer is used, the emails are different: REVIEW REQUEST ATTACHED SUBSEQUENT, REVIEW REQUEST ONECLICK SUBSEQUENT, REVIEW REQUEST SUBSEQUENT</li>
+            </ul>
+            <h4 id="accept-submission">Accept submission</h4>
+            <ul>
+              <li>Editor can select version and send to copyediting (and upload a new version if needed)</li>
+            </ul>
+            <h4 id="decline-submission">Decline Submission</h4>
+            <ul>
+              <li>Submission will be archived after author is notified</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="editing">
+
+      <h2 id="in-editing">In Editing</h2>
+
+      <div role="tabpanel">
+        <!-- Nav Tabs -->
+        <div class="centered-pills">
+          <ul class="nav nav-pills" role="tablist">
+            <li role="presentation" class="active"><a href="#copyediting" aria-controls="copyediting" role="tab" data-toggle="tab">Copyediting</a></li>
+            <li role="presentation"><a href="#scheduling" aria-controls="scheduling" role="tab" data-toggle="tab">Scheduling</a></li>
+            <li role="presentation"><a href="#layout" aria-controls="layout" role="tab" data-toggle="tab">Layout</a></li>
+            <li role="presentation"><a href="#proofreading" aria-controls="proofreading" role="tab" data-toggle="tab">Proofreading</a></li>
+          </ul>
+        </div>
+
+        <div class="tab-content">
+
+          <div role="tabpanel" class="tab-pane active" id="copyediting">
+            <h3 id="copyediting">Copyediting</h3>
+            <ul>
+              <li>If a Layout Editor is being assigned, the link to select will appear</li>
+            </ul>
+            <ul>
+              <li>Copyedit instructions from setup appear here</li>
+              <li>Depending on whether you have copyeditors, you can assign one here - if not the assigned editor will copyedit</li>
+            </ul>
+            <h4 id="initial-copyedit">Initial copyedit</h4>
+            <ul>
+              <li>Initiate to send email to copyeditor (no email if Editor is handling): COPYEDIT REQUEST</li>
+              <li>Once complete copyeditor can upload and send email COPYEDIT COMPLETE</li>
+              <li>Editor can acknowledge with COPYEDIT ACK</li>
+            </ul>
+            <h4 id="author-copyedit">Author copyedit</h4>
+            <ul>
+              <li>Initiate to send email author: COPYEDIT AUTHOR REQUEST</li>
+              <li>Once complete author can upload on editing dashboard and send email COPYEDIT AUTHOR COMPLETE</li>
+              <li>Editor can acknowledge with COPYEDIT AUTHOR ACK</li>
+            </ul>
+            <h4 id="final-copyedit">Final copyedit</h4>
+            <ul>
+              <li>Initiate to send email to copyeditor (no email if Editor is handling): COPYEDIT FINAL REQUEST</li>
+              <li>Once complete copyeditor can upload and send email COPYEDIT FINAL COMPLETE</li>
+              <li>Editor can acknowledge with COPYEDIT FINAL ACK</li>
+            </ul>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="scheduling">
+            <h3 id="scheduling">Scheduling</h3>
+            <ul>
+              <li>Use selection to choose which issue the article will be published in - issue management is handled elsewhere</li>
+            </ul>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="layout">
+            <h3 id="layout">Layout</h3>
+            <ul>
+              <li>If a Layout Editor is being assigned, the link to select will appear</li>
+              <li>The goal of the layout workflow is to get the galley version uploaded. The layout version is intended to be used as the source version for generating the galley version. The galley version will be published. If you're not using OJS for publication, you may still want to keep your final versions here for reference.</li>
+              <li>Layout templated can up uploaded to serve as a guide for layout editors and proofreaders</li>
+            </ul>
+            <h4 id="layout-version">Layout Version</h4>
+            <ul>
+              <li>The Editor should manually upload the final copyedit version to the layout version</li>
+              <li>Layout version is intended to be used to retain the source document used to create the galley version - if there is no layout editor, this need not be used.</li>
+            </ul>
+            <h4 id="galley-version">Galley Version</h4>
+            <ul>
+              <li>Galley version is the format presented to the reader - PDF, HTML, etc.</li>
+              <li>Uploading a Galley invokes the &quot;Edit a Layout Galley&quot; screen, where file format label and language can be specified, or the file replaced</li>
+              <li>Multiple galley files may be uploaded</li>
+            </ul>
+            <h4 id="supplementary-files">Supplementary Files</h4>
+            <ul>
+              <li>Supplementary files can be uploaded, which invokes the same interface that teh author sees during the submission process</li>
+              <li>Multiple supplementary files may be uploaded</li>
+            </ul>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="proofreading">
+            <h3 id="proofreading">Proofreading</h3>
+            <ul>
+              <li>If a Proofreader is being assigned, the link to select will appear</li>
+              <li>The proofreading workflow is completely optional</li>
+              <li>Proofreading instructions appear here</li>
+            </ul>
+            <h4 id="author">Author</h4>
+            <ul>
+              <li>Initiate to send email request to author to proofread: PROOFREAD AUTHOR REQUEST</li>
+              <li>Author logs in to view proofreading instructions and access the proof - logging in notes date work is underway</li>
+              <li>Corrections are noted in the Proofreading Corrections comment section, not on the original document</li>
+              <li>Author marks as complete, which sends email: PROOFREAD AUTHOR COMPLETE</li>
+              <li>Editor may then acknowledge proofread with email: PROOFREAD AUTHOR ACK</li>
+            </ul>
+            <h4 id="proofreader">Proofreader</h4>
+            <ul>
+              <li>No Emails sent if Editor is proofreading</li>
+              <li>Editor initiates to send email to proofreader: PROOFREAD REQUEST</li>
+              <li>Workflow as with Author, with emails: PROOFREAD COMPLETE, PROOFREAD ACK</li>
+            </ul>
+            <h4 id="layout-1">Layout</h4>
+            <ul>
+              <li>No Emails sent if Editor is doing layout</li>
+              <li>Editor initiates to send email to Layout Editor: PROOFREAD LAYOUT REQUEST</li>
+              <li>Layout editor reviews corrections and creates new layout/galley versions</li>
+              <li>Layout editor notes complete with email: PROOFREAD LAYOUT COMPLETE</li>
+              <li>Editor acknowledges with email: PROOFREAD LAYOUT ACK</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+</body>
+</html>
